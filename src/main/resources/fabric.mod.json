@@ -3,9 +3,13 @@
   "id": "spam_optimised",
   "version": "${version}",
   "name": "Spam Optimised",
-  "description": "",
-  "authors": [],
-  "contact": {},
+  "description": "Advanced PVP Spam Tool by NotY215",
+  "authors": [
+    "NotY215"
+  ],
+  "contact": {
+    "homepage": "https://www.youtube.com/@NotY215"
+  },
   "license": "MIT",
   "icon": "assets/spam_optimised/icon.png",
   "environment": "client",
@@ -18,6 +22,9 @@
     ],
     "main": [
       "pro.noty.spam.SpamOptimised"
+    ],
+    "modmenu": [
+      "pro.noty.spam.gui.ConfigGui"
     ]
   },
   "mixins": [
