@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "spam_optimised",
+  "version": "${version}",
+  "name": "Spam Optimised",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/spam_optimised/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "pro.noty.spam.client.SpamOptimisedDataGenerator"
+    ],
+    "client": [
+      "pro.noty.spam.client.SpamOptimisedClient"
+    ],
+    "main": [
+      "pro.noty.spam.SpamOptimised"
+    ]
+  },
+  "mixins": [
+    "spam_optimised.mixins.json",
+    {
+      "config": "spam_optimised.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
