@@ -1,4 +1,4 @@
-package pro.noty.spam.event;
+package pro.noty.spam.client.event;
 
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
@@ -18,8 +18,9 @@ public class KeyInputHandler {
                 "key.spam_optimised.toggle",
                 InputUtil.Type.KEYSYM,
                 GLFW.GLFW_KEY_B,
-                "category.spam_optimised"
+                KeyBinding.Category.MISC
         ));
+
 
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             if (toggleKey.wasPressed()) {

@@ -1,5 +1,6 @@
-package pro.noty.spam.mixin;
+package pro.noty.spam.client.mixin;
 
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.network.packet.c2s.play.PlayerMoveC2SPacket;
 import org.spongepowered.asm.mixin.Mixin;
@@ -15,7 +16,8 @@ public class CriticalsMixin {
         ClientPlayerEntity player = (ClientPlayerEntity) (Object) this;
 
         // If mod is enabled and we are attacking, spoof a small fall
-        if (SpamOptimised.enabled && player.isAttacking()) {
+        if (SpamOptimised.enabled &&
+                MinecraftClient.getInstance().options.attackKey.isPressed()) {
             double x = player.getX();
             double y = player.getY();
             double z = player.getZ();

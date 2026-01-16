@@ -4,7 +4,7 @@
   "package": "pro.noty.spam.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "CriticalsMixin"
+    "pro.noty.spam.client.mixin.CriticalsMixin"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -24,7 +24,7 @@
       "pro.noty.spam.SpamOptimised"
     ],
     "modmenu": [
-      "pro.noty.spam.gui.ConfigGui"
+      "pro.noty.spam.client.gui.ConfigGui"
     ]
   },
   "mixins": [

@@ -1,4 +1,4 @@
-package pro.noty.spam.gui;
+package pro.noty.spam.client.gui;
 
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;
