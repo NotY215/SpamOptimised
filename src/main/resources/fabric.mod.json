@@ -11,7 +11,7 @@
     "homepage": "https://www.youtube.com/@NotY215"
   },
   "license": "MIT",
-  "icon": "assets/spam_optimised/icon.png",
+  "icon": "assets/spam_optimised/logo.png",
   "environment": "client",
   "entrypoints": {
     "fabric-datagen": [
