@@ -18,7 +18,7 @@ public class KeyInputHandler {
                 "key.spam_optimised.toggle",
                 InputUtil.Type.KEYSYM,
                 GLFW.GLFW_KEY_B,
-                KeyBinding.Category.MISC
+                "category.spam_optimised"
         ));
 
 
